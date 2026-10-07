@@ -56,7 +56,7 @@
 
 <header>
   <h1>Privacy Policy</h1>
-  <p>PDF Scanner &middot; last updated <time datetime="2026-10-07">October 7, 2026</time></p>
+  <p>PDF Scanner &middot; last updated <time datetime="2026-10-08">October 8, 2026</time></p>
 </header>
 
 <section class="card">
@@ -65,7 +65,7 @@
   <ul>
     <li>Your scans and documents are processed <strong>entirely on your device</strong>. Nothing is uploaded to the developer or to any cloud storage.</li>
     <li>No account, no sign-up. The app asks for <strong>no camera and no storage permission</strong>.</li>
-    <li>The app shows <strong>no advertising</strong> and contains no analytics or tracking of its own.</li>
+    <li>The app shows <strong>no ads before 1 September 2027</strong>. From that date it shows a banner and a native ad through <strong>Google AdMob</strong> (section 5). It contains no analytics or tracking of its own.</li>
     <li>Scanning and text recognition use Google&rsquo;s on-device <strong>ML Kit</strong>, which sends Google anonymous diagnostics about how those features perform (section 5) &mdash; never your images or text.</li>
   </ul>
 </section>
@@ -73,7 +73,7 @@
 <section class="card">
   <h2>2. Data we collect</h2>
   <p>The developer (<strong>Cool App Helpdesk</strong>) collects <strong>no data</strong>. The app has no server, no account system and no analytics, so we never receive your documents, your text or anything about you.</p>
-  <p>The only data that leaves your device on its own is the ML Kit diagnostics described in section 5, which go to Google, not to us.</p>
+  <p>The only data that leaves your device on its own is the ML Kit diagnostics and, from 1 September 2027, the advertising data described in section 5. Both go to Google, not to us.</p>
 </section>
 
 <section class="card">
@@ -97,7 +97,7 @@
   <table>
     <thead><tr><th>Permission</th><th>Reason</th><th>When asked</th></tr></thead>
     <tbody>
-      <tr><td><code>INTERNET</code> + <code>ACCESS_NETWORK_STATE</code></td><td>Required by bundled Google libraries; the app itself sends nothing</td><td>Auto-granted (normal permission)</td></tr>
+      <tr><td><code>INTERNET</code> + <code>ACCESS_NETWORK_STATE</code></td><td>Used by Google libraries: ML Kit, and AdMob ads from 1 September 2027</td><td>Auto-granted (normal permission)</td></tr>
       <tr><td><code>WAKE_LOCK</code> + <code>FOREGROUND_SERVICE</code></td><td>Added by Android/Google libraries for background work</td><td>Auto-granted (normal permission)</td></tr>
     </tbody>
   </table>
@@ -108,8 +108,8 @@
   <h2>5. Network activity and third parties</h2>
   <p>All scanning, text recognition and PDF processing happen on your device. Your images, documents and recognised text are never uploaded.</p>
   <p><strong>Google ML Kit</strong> powers the document scanner and text recognition (OCR). It runs inside Google Play services, which may download or update ML Kit models, and sends Google <strong>diagnostics and usage metrics</strong>: device and app information (model, Android version, app package and version), performance and error data, and non-uniquely identifying installation identifiers. Google uses this to run and improve ML Kit, does not share it with third parties, and encrypts it in transit. It never includes your images or text. See <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">ML Kit data disclosure</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>.</p>
-  <p>The app package includes the Google Mobile Ads (AdMob) library for possible future use, but it is <strong>switched off</strong>: it is never started, shows no ads and sends nothing. If ads are ever turned on, this policy will be updated first.</p>
-  <p>The app contains <strong>no analytics SDKs, no crash-reporting SDKs and no social or attribution SDKs</strong>. Other libraries (PdfBox, androidx.pdf, Hilt, Coil) work entirely on-device.</p>
+  <p><strong>Advertising (Google AdMob).</strong> The app includes the Google Mobile Ads SDK. <strong>Before 1 September 2027 it is never started</strong>: no ads are shown and it sends nothing. From 1 September 2027 the app shows a banner at the bottom of its main screens and one native ad card in the Tools list (never while you scan or read). To serve and measure those ads, AdMob collects and shares with Google: your IP address (and the approximate location derived from it), device and app information, ad interactions (views and taps), diagnostics, and app-scoped identifiers such as the app set ID. The app does <strong>not</strong> use your Android advertising ID: the permission is removed, so ads are not personalised with it. Your documents, images and extracted text are never shared with AdMob. Where the law requires consent (for example in the EEA and UK), you will be asked before ads load. See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses data from apps that use its services</a>.</p>
+  <p>Apart from ML Kit and AdMob, the app contains <strong>no analytics SDKs, no crash-reporting SDKs and no social or attribution SDKs</strong>. Other libraries (PdfBox, androidx.pdf, Hilt, Coil) work entirely on-device.</p>
   <p>When you share a file through Android&rsquo;s share sheet, the app hands that file to the app you choose. The developer does not see what you share.</p>
 </section>
 
@@ -121,7 +121,7 @@
 <section class="card">
   <h2>7. Data retention and deletion</h2>
   <p>Your scans stay on your device until you delete them in the app (<em>My scans &rarr; &#8943; &rarr; Delete</em>), clear the app&rsquo;s storage in <em>Android Settings &rarr; Apps &rarr; PDF Scanner &rarr; Storage &rarr; Clear storage</em>, or uninstall the app. Uninstalling removes every scan the app holds; copies you saved elsewhere with &ldquo;Save to device&rdquo; stay where you put them.</p>
-  <p>The developer holds no data about you, so there is nothing for us to delete.</p>
+  <p>The developer holds no data about you, so there is nothing for us to delete. Data held by Google (ML Kit, AdMob) is governed by Google&rsquo;s retention rules; you can reset your app set ID by clearing the app&rsquo;s storage or reinstalling it.</p>
 </section>
 
 <section class="card">
